@@ -1,0 +1,37 @@
+.task-input {
+  width: auto;
+  min-width: 200px;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.task-input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.task-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.edit-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: inherit;
+  font-size: 1rem;
+}
+
+.edit-input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.5);
+}
