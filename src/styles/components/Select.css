@@ -1,18 +1,110 @@
-.priority-select {
-  padding: 0.5rem 1rem;
+/* Control in general */
+.react-select-container .react-select__control {
+  padding: 0.5rem;
   border: 2px solid transparent;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
   color: inherit;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  min-width: max-content;
-  white-space: nowrap;
+  min-width: 120px;
+  box-shadow: none;
+  min-height: auto;
 }
-
-.priority-select:focus {
-  outline: none;
+/*Control on focus */
+.react-select-container .react-select__control--is-focused {
   border-color: rgba(255, 255, 255, 0.4);
   background: rgba(255, 255, 255, 0.15);
+  box-shadow: none;
+}
+
+/*On hover */
+.react-select-container .react-select__control:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/*Selection on menu */
+.react-select-container .react-select__menu {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.react-select-container .react-select__menu-list {
+  padding: 0;
+}
+
+/*Each individual option*/
+.react-select-container .react-select__option {
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+}
+/*Option focused*/
+.react-select-container .react-select__option--is-focused {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/*Option selected*/
+.react-select-container .react-select__option--is-selected {
+  background: rgba(255, 255, 255, 0.3);
+  font-weight: 600;
+}
+
+.react-select-container .react-select__single-value {
+  color: inherit;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* Placeholder text */
+.react-select-container .react-select__placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Dropdown */
+.react-select-container .react-select__dropdown-indicator {
+  color: rgba(255, 255, 255, 0.6);
+  padding: 8px;
+}
+
+.react-select-container .react-select__dropdown-indicator:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Separator line */
+.react-select-container .react-select__indicator-separator {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 1px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* Value container */
+.react-select-container .react-select__value-container {
+  padding: 0.25rem 0.5rem;
+  flex-wrap: nowrap;
+}
+
+/* Input */
+.react-select-container .react-select__input {
+  color: inherit;
+}
+
+/* Clear indicator */
+.react-select-container .react-select__clear-indicator {
+  color: rgba(255, 255, 255, 0.6);
+  padding: 8px;
+}
+
+.react-select-container .react-select__clear-indicator:hover {
+  color: rgba(255, 255, 255, 0.8);
 }

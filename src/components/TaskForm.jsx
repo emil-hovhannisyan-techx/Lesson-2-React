@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Plus } from "lucide-react";
 import Input from "./Input";
 import Button from "./Button";
-import Select from "./Select";
+import Select2 from "./Select2";
 import "../styles/components/TaskForm.css";
 
 const TaskForm = ({ onAddTask }) => {
@@ -43,7 +43,7 @@ const TaskForm = ({ onAddTask }) => {
           placeholder="Add a new task..."
           onKeyDown={handleKeyDown}
         />
-        <Select
+        <Select2
           value={priority}
           onChange={setPriority}
           options={priorityOptions}
