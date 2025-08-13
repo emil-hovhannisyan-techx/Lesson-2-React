@@ -30,6 +30,8 @@ const Select2 = ({
     </div>
   );
 };
+
+// Please help
 // const Select2 = ({
 //   value,
 //   onChange,
@@ -38,18 +40,20 @@ const Select2 = ({
 //   name = "selectDefault",
 // }) => {
 //   return (
-//     <select
-//       value={value}
-//       className={`priority-select ${className}`}
-//       onChange={(e) => onChange(e.target.value)}
-//       name={name}
-//     >
-//       {options.map((option) => (
-//         <option key={option.value} value={option.value}>
-//           {option.label}
-//         </option>
-//       ))}
-//     </select>
+//     <div style={{ position: "relative" }}>
+//       <select
+//         value={value}
+//         className={`priority-select ${className}`}
+//         onChange={(e) => onChange(e.target.value)}
+//         name={name}
+//       >
+//         {options.map((option) => (
+//           <option key={option.value} value={option.value}>
+//             {option.label}
+//           </option>
+//         ))}
+//       </select>
+//     </div>
 //   );
 // };
 
