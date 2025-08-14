@@ -11,7 +11,7 @@ const TaskFilters = ({ currentFilter, onFilterChange }) => {
   return (
     <div className="filters">
       {filters.map((filter) => {
-        const Icon = filter.icon; // Fix: Dynamic component for icon
+        const Icon = filter.icon;
         return (
           <button
             key={filter.key}

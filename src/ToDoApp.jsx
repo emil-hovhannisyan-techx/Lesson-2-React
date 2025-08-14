@@ -23,7 +23,7 @@ const ToDoApp = () => {
   const toggleComplete = (id) => {
     setTasks((prev) =>
       prev.map((task) =>
-        task.id === id ? { ...task, completed: !task.comlpeted } : task
+        task.id === id ? { ...task, completed: !task.completed } : task
       )
     );
   };
